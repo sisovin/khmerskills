@@ -28,13 +28,15 @@ khmerskills is a universal skills loader for AI coding agents. It installs skill
 <available_skills>
   <skill>
     <name>khmerskills</name>
-    <description>Skills from sisovin/khmerskills</description>
+    <description>Universal skills loader and sync tool for AI coding agents.</description>
     <location>C:\Users\sisov\.khmerskills\skills\sisovin\khmerskills</location>
     <repository>sisovin/khmerskills</repository>
     <version>1.0.0</version>
+    <tags>ai, agent, cli, skills, typescript</tags>
   </skill>
 </available_skills>
 <!-- OPEN_SKILLS_END -->
+
 
 
 

@@ -2,6 +2,7 @@
 
 import { Command } from 'commander';
 import { installCommand } from './commands/install';
+import { createCommand } from './commands/create';
 import { readCommand } from './commands/read';
 import { listCommand } from './commands/list';
 import { syncCommand } from './commands/sync';
@@ -19,6 +20,13 @@ program
   .description('Install skills from a GitHub repository')
   .option('-b, --branch <branch>', 'Specific branch to install from')
   .action(installCommand);
+
+program
+  .command('create <skill-name>')
+  .description('Create a new local skill scaffold')
+  .option('-p, --path <path>', 'Output directory path (defaults to ./<skill-name>)')
+  .option('-f, --force', 'Overwrite files in an existing target directory')
+  .action(createCommand);
 
 program
   .command('read <skill-name>')
