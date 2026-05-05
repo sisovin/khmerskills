@@ -1,0 +1,18 @@
+{
+  "$schema": "./skills.schema.json",
+  "name": "khmerskills",
+  "description": "Universal skills loader and sync tool for AI coding agents.",
+  "version": "1.0.0",
+  "author": "Peanech Team",
+  "tags": [
+    "ai",
+    "agent",
+    "cli",
+    "skills",
+    "typescript"
+  ],
+  "homepage": "https://peanech.online",
+  "repository": "sisovin/khmerskills",
+  "license": "MIT",
+  "instructionsFile": "SKILL.md"
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/sisovin/khmerskills/main/skills.schema.json",
+  "title": "Khmerskills Metadata",
+  "description": "Schema for skills.json used by khmerskills repositories.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "description",
+    "version",
+    "author",
+    "tags"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Unique skill name shown in list/read output.",
+      "minLength": 1,
+      "maxLength": 100,
+      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9._-]*$"
+    },
+    "description": {
+      "type": "string",
+      "description": "Human-readable summary of the skill.",
+      "minLength": 1,
+      "maxLength": 300
+    },
+    "version": {
+      "type": "string",
+      "description": "Semantic version of the skill package.",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-[0-9A-Za-z-.]+)?(?:\\+[0-9A-Za-z-.]+)?$"
+    },
+    "author": {
+      "type": "string",
+      "description": "Skill author or team name.",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "tags": {
+      "type": "array",
+      "description": "Keywords for discovery and filtering.",
+      "minItems": 1,
+      "maxItems": 20,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 40,
+        "pattern": "^[a-z0-9][a-z0-9-]*$"
+      }
+    },
+    "homepage": {
+      "type": "string",
+      "description": "Project website URL.",
+      "format": "uri"
+    },
+    "repository": {
+      "type": "string",
+      "description": "Git repository reference in owner/repo format.",
+      "pattern": "^[A-Za-z0-9_.-]+\\/[A-Za-z0-9_.-]+$"
+    },
+    "license": {
+      "type": "string",
+      "description": "License identifier.",
+      "minLength": 1,
+      "maxLength": 60
+    },
+    "instructionsFile": {
+      "type": "string",
+      "description": "Preferred instruction entry file relative to repo root.",
+      "minLength": 1,
+      "maxLength": 200
+    }
+  }
+}
