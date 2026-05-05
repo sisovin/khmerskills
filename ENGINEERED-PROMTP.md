@@ -1,9 +1,9 @@
 # ENGINEERED PROMPT
 
 ```md
-I want to build a command-line tool in TypeScript called `khmetskills`. The main idea is to create a universal skills loader for AI coding agents. It should take the concept of skills from Anthropic's Claude and make it work with any agent, like GitHub Copilot, or anything that can read a file.
+Build me a TypeScript command line tool called khmerskills that lets people use Claude style AI agent skills with other coding agents like Cursor, Copilot, or anything that can read project files.
 
-A user should be able to run `npx openskills install some-org/some-skills` to download skills from a GitHub repo (https://github.com/numman-ali/openskills.git ). The tool will then update a special `AGENTS.md` file in the project, listing all the available skills in an XML format so the AI can see them.
+It should install globally with npm and expose commands to install skills from a GitHub repo, list installed skills, read a skill by name, sync the current project, and remove one or all skills. Installed skills should be tracked in a config file. When someone runs sync, update or create an AGENTS.md file in the project that contains an XML style list of available skills with the name, description, local path, repository, and version.
 
-The agent would then use a command like `npx khmerskills read <skill-name>` to load the specific instructions for a task. It should also have other basic commands like `list`, `sync`, and `remove` to manage the installed skills. Think of it as a universal package manager for AI agent skills.
+A skill repo should work if it has SKILL.md, README.md, or INSTRUCTIONS.md, and optionally a skills.json metadata file. Make the CLI pleasant to use, with clear errors and helpful output. Include build scripts, TypeScript setup, and enough README instructions so someone can install, test locally, and publish it.
 ```

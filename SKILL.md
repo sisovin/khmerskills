@@ -2,11 +2,11 @@
 
 ## Name
 
-khmetskills-core
+khmerskills-core
 
 ## Description
 
-Core operational skill for developing and maintaining the khmetskills CLI project.
+Core operational skill for developing and maintaining the khmerskills CLI project.
 
 ## Use When
 
