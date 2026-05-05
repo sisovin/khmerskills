@@ -1,5 +1,5 @@
 {
-  "name": "khmetskills",
+  "name": "khmerskills",
   "version": "1.0.0",
   "description": "Universal skills loader for AI coding agents",
   "main": "dist/index.js",
