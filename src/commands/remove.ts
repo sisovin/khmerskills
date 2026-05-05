@@ -28,7 +28,7 @@ export async function removeCommand(skillName: string, options: { all?: boolean 
     
     if (skillIndex === -1) {
       spinner.fail(chalk.red(`Skill '${skillName}' not found`));
-      console.log(chalk.yellow('Use `khmetskills list` to see installed skills'));
+      console.log(chalk.yellow('Use `khmerskills list` to see installed skills'));
       process.exit(1);
     }
     

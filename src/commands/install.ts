@@ -62,7 +62,7 @@ export async function installCommand(repository: string, options: { branch?: str
     
     spinner.succeed(chalk.green(`Skills ${actionText} successfully!`));
     console.log(chalk.blue(`\nSkills location: ${installPath}`));
-    console.log(chalk.yellow('Run `khmetskills sync` to update your AGENTS.md file'));
+    console.log(chalk.yellow('Run `khmerskills sync` to update your AGENTS.md file'));
     
     // Auto-sync after install
     const { syncCommand } = require('./sync');

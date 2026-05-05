@@ -4,7 +4,7 @@
   "description": "Universal skills loader for AI coding agents",
   "main": "dist/index.js",
   "bin": {
-    "khmetskills": "./dist/index.js",
+    "khmerskills": "./dist/index.js",
     "openskills": "./dist/index.js"
   },
   "scripts": {
@@ -12,7 +12,13 @@
     "dev": "ts-node src/index.ts",
     "start": "node dist/index.js"
   },
-  "keywords": ["ai", "skills", "claude", "copilot", "agent"],
+  "keywords": [
+    "ai",
+    "skills",
+    "claude",
+    "copilot",
+    "agent"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {

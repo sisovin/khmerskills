@@ -10,7 +10,7 @@ import { removeCommand } from './commands/remove';
 const program = new Command();
 
 program
-  .name('khmetskills')
+  .name('khmerskills')
   .description('Universal skills loader for AI coding agents')
   .version('1.0.0');
 

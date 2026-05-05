@@ -3,15 +3,15 @@ import fs from 'fs-extra';
 import os from 'os';
 import { SkillsConfig } from '../types';
 
-const CONFIG_FILE = 'khmetskills.json';
+const CONFIG_FILE = 'khmerskills.json';
 
 export function getSkillsDir(): string {
   const homeDir = os.homedir();
-  return path.join(homeDir, '.khmetskills', 'skills');
+  return path.join(homeDir, '.khmerskills', 'skills');
 }
 
 export function getConfigPath(): string {
-  return path.join(os.homedir(), '.khmetskills', CONFIG_FILE);
+  return path.join(os.homedir(), '.khmerskills', CONFIG_FILE);
 }
 
 export async function getConfig(): Promise<SkillsConfig> {

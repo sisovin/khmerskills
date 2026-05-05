@@ -7,7 +7,7 @@ export async function listCommand(options: { verbose?: boolean }): Promise<void>
     
     if (config.skills.length === 0) {
       console.log(chalk.yellow('No skills installed'));
-      console.log(chalk.blue('Use `khmetskills install <owner/repo>` to install skills'));
+      console.log(chalk.blue('Use `khmerskills install <owner/repo>` to install skills'));
       return;
     }
     

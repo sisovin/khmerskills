@@ -10,7 +10,7 @@ export async function readCommand(skillName: string): Promise<void> {
     
     if (!skill) {
       console.error(chalk.red(`Skill '${skillName}' not found`));
-      console.log(chalk.yellow('Use `khmetskills list` to see installed skills'));
+      console.log(chalk.yellow('Use `khmerskills list` to see installed skills'));
       process.exit(1);
     }
     
