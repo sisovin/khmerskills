@@ -71,6 +71,14 @@ Each skill repository should contain:
 - A main instruction file (SKILL.md, README.md, or INSTRUCTIONS.md)
 - Optional `skills.json` with metadata
 
+## Agent Documentation
+
+This repository now includes dedicated agent-facing documents:
+
+- [AGENTS.md](AGENTS.md): Runtime context, command usage, and auto-generated skill listing section.
+- [SKILL.md](SKILL.md): The core skill profile for working on this project.
+- [INSTRUCTIONS.md](INSTRUCTIONS.md): Contributor workflow and validation checklist.
+
 ## Development
 
 ```bash
