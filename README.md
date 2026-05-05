@@ -2,6 +2,8 @@
 
 A universal skills loader that makes AI agent skills (from Anthropic's Claude) work with any coding agent like GitHub Copilot, Cursor, or any AI that can read files.
 
+![Khmer Skill](public/images/01-Khmerskills.png)
+
 ## Installation
 
 ```bash
