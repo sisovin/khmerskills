@@ -14,26 +14,33 @@ npm install
 npm run build
 ```
 
-3. Run CLI from compiled output:
+3. Link CLI globally for local testing:
 
 ```bash
-npm run start -- --help
+npm link
+```
+
+4. Verify the CLI is available:
+
+```bash
+khmerskills --help
 ```
 
 ## Development Workflow
 
 1. Make focused changes.
-2. Build and verify:
+2. Build and re-link:
 
 ```bash
 npm run build
+npm link
 ```
 
 3. Test primary flows:
 
 ```bash
-node dist/index.js list
-node dist/index.js sync
+khmerskills list
+khmerskills sync
 ```
 
 ## Documentation Rules
