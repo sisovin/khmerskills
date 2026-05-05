@@ -79,6 +79,10 @@ This repository now includes dedicated agent-facing documents:
 - [SKILL.md](SKILL.md): The core skill profile for working on this project.
 - [INSTRUCTIONS.md](INSTRUCTIONS.md): Contributor workflow and validation checklist.
 
+## Implementation Guide
+
+For user and developer best practices, see [IMPLEMENT.md](IMPLEMENT.md).
+
 ## Development
 
 ```bash
